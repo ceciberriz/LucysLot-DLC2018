@@ -15,6 +15,7 @@ public class TextManager : MonoBehaviour {
 
 	bool npcTalking = false;
 	bool playerTalking = false;
+    bool inConversation = false;
 	Coroutine pTalkRoutine;
 
 	private Conversation conversation = new Conversation();
@@ -24,9 +25,9 @@ public class TextManager : MonoBehaviour {
 	private bool isScrolling;
 
 	public Canvas uiCanvas;
-	public Text playerText;
+	private Text playerText;
 	public Text npcText;
-	public Button pButton;
+	private Button pButton;
 	public GameObject pButtonPrefab;
 	public GameObject npcPanel;
 	public GameObject npcPanelPrefab;
@@ -203,7 +204,11 @@ public class TextManager : MonoBehaviour {
 	//Needed to start conversation called by NPC class.
 	public void setNPC(GameObject clickedNPC)
 	{
-		npcTalking = true; //Update checks for this bool to start conversation.
+        if (!inConversation)
+        {
+            npcTalking = true; //Update checks for this bool to start conversation.
+            inConversation = true;
+        }
 	}
 
 	//Instantiates a new dialogue box below the previous. Takes in a GameObject so it can either be Panel or Button. 
