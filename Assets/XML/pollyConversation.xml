@@ -1,0 +1,20 @@
+<Conversation>
+	<Message speaker="npc">
+		<Text>Hi!</Text>
+		<Responses>
+			<Message speaker="player">
+				<Text>Hello!</Text>
+			</Message>
+			<Message speaker="player">
+				<Text>How do you do?</Text>
+				<Conversation>
+					<Message speaker="npc"><Text>I'm good.</Text></Message>
+				</Conversation>
+			</Message>
+		</Responses>
+	</Message>
+	<Message speaker="npc">
+		<Text>Bye!</Text>
+	</Message>
+</Conversation>
+

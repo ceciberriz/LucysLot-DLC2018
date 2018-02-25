@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Conversation>
+    <messages>
+        <NPCMessage text = "Ay. You’re new here aren’t you?">
+            <responses>
+                <PlayerMessage text = "Yeah.">
+                    <response>
+                        <NPCMessage text = "Never seen you before. When did you get here?">
+                            <responses>
+                                <PlayerMessage text = "Very recently.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "This week.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Yesterday.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Last month.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Long time ago, buddy.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Probably been here since you've been born.">
+                                    <response>
+                                        <NPCMessage text = "Wow that's a long time. Never noticed you before!">
+                                        </NPCMessage>
+                                    </response>
+                                </PlayerMessage>
+                            </responses>
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage>
+                <PlayerMessage text = "Mhm.">
+                    <response>
+                        <NPCMessage text = "Never seen you before. When did you get here?">
+                            <responses>
+                                <PlayerMessage text = "Very recently.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "This week.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Yesterday.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Last month.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Long time ago, buddy.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Probably been here since you've been born.">
+                                    <response>
+                                        <NPCMessage text = "Wow that's a long time. Never noticed you before!">
+                                        </NPCMessage>
+                                    </response>
+                                </PlayerMessage>
+                            </responses>
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage> 
+                <PlayerMessage text = "Yes I am. I'm also a human.">
+                    <response>
+                        <NPCMessage text = "Never seen you before. When did you get here?">
+                            <responses>
+                                <PlayerMessage text = "Very recently.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "This week.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Yesterday.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Last month.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Long time ago, buddy.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Probably been here since you've been born.">
+                                    <response>
+                                        <NPCMessage text = "Wow that's a long time. Never noticed you before!">
+                                        </NPCMessage>
+                                    </response>
+                                </PlayerMessage>
+                            </responses>
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage> 
+                <PlayerMessage text = "Nope.">
+                    <response>
+                        <NPCMessage text = "Never seen you before. When did you get here?">
+                            <responses>
+                                <PlayerMessage text = "Very recently.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "This week.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Yesterday.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Last month.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Long time ago, buddy.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Probably been here since you've been born.">
+                                    <response>
+                                        <NPCMessage text = "Wow that's a long time. Never noticed you before!">
+                                        </NPCMessage>
+                                    </response>
+                                </PlayerMessage>
+                            </responses>
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage>
+                <PlayerMessage text = "Been here awhile now.">
+                    <response>
+                        <NPCMessage text = "Never seen you before. When did you get here?">
+                            <responses>
+                                <PlayerMessage text = "Very recently.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "This week.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Yesterday.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Last month.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Long time ago, buddy.">
+                                </PlayerMessage>
+                                <PlayerMessage text = "Probably been here since you've been born.">
+                                    <response>
+                                        <NPCMessage text = "Wow that's a long time. Never noticed you before!">
+                                        </NPCMessage>
+                                    </response>
+                                </PlayerMessage>
+                            </responses>
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage> 
+                <PlayerMessage text = "Who's askin?">
+                </PlayerMessage>
+                <PlayerMessage text = "Can I help you?">
+                </PlayerMessage>
+            </responses>
+        </NPCMessage>
+        <NPCMessage text = "Could you tell me where the Eyeball Popz are?">
+            <responses>
+                <PlayerMessage text = "I'm new here. I'm not too sure.">
+                </PlayerMessage>
+                <PlayerMessage text = "Snacks on Aisle 2.">
+                </PlayerMessage>
+                <PlayerMessage text = "Right over there.">
+                    <response>
+                        <NPCMessage text = "What? Where?">
+                            <responses>
+                                <PlayerMessage text = "In ... that general direction.">
+                                </PlayerMessage>
+                            </responses>
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage>
+                <PlayerMessage text = "Aisle 1.">
+                </PlayerMessage>
+                <PlayerMessage text = "We don't sell Eyeball Popz here.">
+                    <response>
+                        <NPCMessage text = "Oh that's a bummer. I'll just look around then. Thanks!">
+                        </NPCMessage>
+                    </response>
+                </PlayerMessage>
+            </responses>
+        </NPCMessage>
+    </messages>
+</Conversation>
+    

@@ -6,10 +6,10 @@ public class NPC : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	}
+    }
 
-	private void OnMouseDown()
-	{
-		TextManager.instance.setNPC(this.gameObject);
-	}
+    private void OnMouseDown()
+    {
+        TextManager.instance.setNPC(this.gameObject);
+    }
 }
