@@ -1259,6 +1259,7 @@ GameObject:
   - component: {fileID: 1455983742}
   - component: {fileID: 1455983743}
   - component: {fileID: 1455983744}
+  - component: {fileID: 1455983745}
   m_Layer: 0
   m_Name: goatsatan
   m_TagString: Untagged
@@ -1311,7 +1312,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0bca7c040406e4a658c88174a8eaa8f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 650ee1d0a4e2e7447817fa2be9c272b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1346,7 +1347,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.39, y: 11.89}
+    oldSize: {x: 9.54, y: 6.8}
     newSize: {x: 9.39, y: 11.89}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1355,6 +1356,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.39, y: 11.89}
   m_EdgeRadius: 0
+--- !u!95 &1455983745
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455983740}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 829ce4034842438409d09df876316554, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1480114623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1627,9 @@ MonoBehaviour:
   textDelay: 1.5
   textScrollSpeed: 200
   uiCanvas: {fileID: 1287948027}
+  playerText: {fileID: 0}
   npcText: {fileID: 452926486}
+  pButton: {fileID: 0}
   pButtonPrefab: {fileID: 1085280239478114, guid: 86812e2b59c3fdb438402ea0ef2f5174,
     type: 2}
   npcPanel: {fileID: 452926484}
