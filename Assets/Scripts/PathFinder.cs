@@ -82,7 +82,7 @@ public class PathFinder : MonoBehaviour {
 					int newMovementCostToNeighbour = currentNode.gCost + GetDistance (currentNode, neighbour);
 					if (newMovementCostToNeighbour < neighbour.gCost || !openSet.Contains (neighbour)) {
 						neighbour.gCost = newMovementCostToNeighbour;
-						neighbour.hCost = GetDistance (neighbour, targetNode);
+						neighbour.hCost = 100 * GetDistance (neighbour, targetNode);
 						neighbour.parent = currentNode;
 
 						if (!openSet.Contains (neighbour)) {
