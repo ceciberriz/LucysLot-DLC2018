@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4086806079301084}
   - component: {fileID: 212676904846144784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fridge1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4567356557237504}
   - component: {fileID: 33448771293775118}
   - component: {fileID: 65059024414394528}
+  - component: {fileID: 23573889362621388}
   m_Layer: 8
   m_Name: fridgesCollider
   m_TagString: Untagged
@@ -65,12 +66,44 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1883109912175560}
   m_LocalRotation: {x: -0.35355338, y: -0.35355338, z: 0.1464466, w: 0.8535535}
-  m_LocalPosition: {x: -0.0909124, y: -3.7979639, z: 4.0408196}
-  m_LocalScale: {x: 10.052746, y: 2.2857144, z: 5.764079}
+  m_LocalPosition: {x: -0.33, y: -3.97, z: 3.87}
+  m_LocalScale: {x: 10.7332945, y: 2.2857144, z: 5.764079}
   m_Children: []
   m_Father: {fileID: 4086806079301084}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23573889362621388
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1883109912175560}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0facde08905584ff3ac52aaf8ac36add, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!33 &33448771293775118
 MeshFilter:
   m_ObjectHideFlags: 1

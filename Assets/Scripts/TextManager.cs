@@ -63,7 +63,7 @@ public class TextManager : MonoBehaviour {
         NPCMessage[] messages = conversation.getMessages();
         for (int i = messages.Length - 1; i >= 0; i--)
         {
-            Debug.Log(messages[i].getText());
+            //Debug.Log(messages[i].getText());
             NPCMessageStack.Push(messages[i]);
         }
     }

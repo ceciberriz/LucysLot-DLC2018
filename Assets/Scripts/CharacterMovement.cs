@@ -19,7 +19,7 @@ public class Unit : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButton(0)) {
 			SetTargetPostion ();
-			Debug.Log ("setting isMoving to true...");
+			//Debug.Log ("setting isMoving to true...");
 			isMoving = true;
 		}
 		if (isMoving) {

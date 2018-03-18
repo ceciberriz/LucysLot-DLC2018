@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButton(0)) {
 			SetTargetPostion ();
-			Debug.Log ("setting isMoving to true...");
+			//Debug.Log ("setting isMoving to true...");
 			isMoving = true;
 		}
 		if (isMoving) {
@@ -56,7 +56,7 @@ public class CharacterMovement : MonoBehaviour {
 	IEnumerator FollowPath() {
 		if (isMoving) {
 			
-			Debug.Log ("following path..");
+			//Debug.Log ("following path..");
 			Vector3 currentWaypoint = transform.position;
 			if (path.Length > 0) {
 				currentWaypoint = path [0];
@@ -71,7 +71,7 @@ public class CharacterMovement : MonoBehaviour {
 				}
 				Vector3 finalLocation = new Vector3 (currentWaypoint.x, transform.position.y, currentWaypoint.z);
 				transform.position = Vector3.MoveTowards (transform.position, finalLocation, speed);
-				Debug.Log ("transforming..");
+				//Debug.Log ("transforming..");
 				yield return null;
 			}
 		}
