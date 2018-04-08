@@ -10,17 +10,21 @@ public class CharacterMovement : MonoBehaviour {
 	Vector3[] path = new Vector3[0];
 	int targetIndex;
 
+    Animator animator;
+    bool animMoving;
+
 	// Use this for initialization
 	void Start() {
 		target = transform.position;
-	}
+        animator = GetComponent<Animator>();
+    }
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButton(0)) {
 			SetTargetPostion ();
-			//Debug.Log ("setting isMoving to true...");
 			isMoving = true;
+            animator.SetBool("IsMoving", true);
 		}
 		if (isMoving) {
 			Move ();
@@ -33,7 +37,6 @@ public class CharacterMovement : MonoBehaviour {
 
 	//sets position using raycasting and mouse click location
 	void SetTargetPostion() {
-		//var targetPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 
@@ -55,8 +58,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	IEnumerator FollowPath() {
 		if (isMoving) {
-			
-			//Debug.Log ("following path..");
+
 			Vector3 currentWaypoint = transform.position;
 			if (path.Length > 0) {
 				currentWaypoint = path [0];
@@ -70,14 +72,10 @@ public class CharacterMovement : MonoBehaviour {
 					currentWaypoint = path [targetIndex];
 				}
 				Vector3 finalLocation = new Vector3 (currentWaypoint.x, transform.position.y, currentWaypoint.z);
-				transform.position = Vector3.MoveTowards (transform.position, finalLocation, speed);
-				//Debug.Log ("transforming..");
+				transform.position = Vector3.MoveTowards (transform.position, finalLocation, speed);                        
 				yield return null;
-			}
+			}            
 		}
-	}
+    }
 }
 
-
-//Debug.Log("setting isMoving to false...");
-//isMoving = false;
